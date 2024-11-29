@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="source/styles/mstle.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="source/files/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="source/files/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="source/files/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>MyHTML</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">HTML</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="Tags.html">Tags</a>
+                        <a class="nav-link" href="Selectors.html">Selectors</a>
+                        <a class="nav-link" href="semantics.html">Semantics</a>
+                        <a class="nav-link" href="Positions.html">Positions</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section>
+
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <h1>Html
+                        <hr>
+                    </h1>
+                    <p><a href="https://ru.wikipedia.org/wiki/HTML" title="Ссылка на википедию" target="_blank"
+                            rel="noopener noreferrer">HTML</a> (от англ. HyperText Markup Language — «язык
+                        гипертекстовой разметки»)
+                        — стандартизированный язык гипертекстовой разметки документов для просмотра веб-страниц в
+                        браузере.
+                        Веб-браузеры получают HTML документ
+                        от сервера по протоколам HTTP/HTTPS или открывают с локального диска, далее интерпретируют код в
+                        интерфейс,
+                        который будет отображаться на экране монитора.</p>
+                    <p>В HTML можно встроить язык программирования JavaScript с помощью тега. Также включение CSS в HTML
+                        позволяет
+                        задавать внешний вид и макет страницы.</p>
+                    <p>HTML — теговый язык разметки документов. Любой документ на языке HTML представляет собой набор
+                        элементов,
+                        причём начало и конец каждого элемента обозначается специальными пометками — тегами. Элементы
+                        могут быть
+                        пустыми, то есть не содержащими никакого текста и других данных.</p>
+                    <img src="source/image/HTML5_logo_and_wordmark.svg.png" class="rounded float-start" alt="картинка">
+
+                    <h2>Анатомия html документа</h2>
+                    <ul class="anotomy">
+                        <li> &lt!DOCTYPE html&gt — доктайп. В прошлом, когда HTML был молод (около 1991/1992), доктайпы
+                            должны были
+                            выступать в качестве ссылки на набор правил, которым HTML страница должна была следовать,
+                            чтобы
+                            считаться хорошим HTML, что могло означать автоматическую проверку ошибок и другие полезные
+                            вещи. Однако
+                            в наши дни, никто не заботится об этом, и они на самом деле просто исторический артефакт,
+                            который должен
+                            быть включён для того, что бы все работало правильно. На данный момент это все, что вам
+                            нужно знать.
+                        </li>
+                        <li>&lthtml>&lt/html> — элемент &lthtml>. Этот элемент оборачивает весь контент на всей
+                            странице, и иногда
+                            известен как корневой элемент.</li>
+                        <li>&lthead>&lt/head> — элемент &lthead>. Этот элемент выступает в качестве контейнера для
+                            всего, что вы
+                            пожелаете включить на HTML страницу, но не являющегося контентом, который вы показываете
+                            пользователям
+                            вашей страницы. К ним относятся такие вещи, как ключевые слова и описание страницы, которые
+                            будут
+                            появляться в результатах поиска, CSS стили нашего контента, кодировка и многое другое.</li>
+                        <li>&ltbody>&lt/body> — элемент &ltbody>. В нем содержится весь контент, который вы хотите
+                            показывать
+                            пользователям, когда они посещают вашу страницу, будь то текст, изображения, видео, игры,
+                            проигрываемые
+                            аудиодорожки или что-то ещё.</li>
+                        <li>&ltmeta charset="utf-8"> — этот элемент устанавливает UTF-8 кодировку вашего документа,
+                            которая включает
+                            в себя большинство символов из всех известных человечеству языков. По сути, теперь документ
+                            может
+                            обрабатывать любой текстовый контент, который вы в него вложите. Нет причин не устанавливать
+                            её, так как
+                            это может помочь избежать некоторых проблем в дальнейшем.</li>
+                        <li>&lttitle>&lt/title> — элемент &lttitle>. Этот элемент устанавливает заголовок для вашей
+                            страницы,
+                            который является названием, появляющимся на вкладке браузера загружаемой страницы, и
+                            используется для
+                            описания страницы, когда вы добавляете её в закладки/избранное.</li>
+                    </ul>
+                    <p>HTML — это каркас сайта. По нему браузер отрисовывает веб-страницу, наводит «красоту» с помощью
+                        CSS и JavaScript.
+
+
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <img style="width: 350px;" src="source/image/HTML.svg.png" alt="картинка">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <button style="position: relative; bottom: 10px;">
+                        <a href="https://www.google.ru/?hl=ru"><img src="source/image/icons8-google-50.png" alt=""></a>
+                    </button>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <a href="source.html">info/links</a>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <time datetime="2024-11-22">ред.2024</time>
+
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

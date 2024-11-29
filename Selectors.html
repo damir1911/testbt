@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="source/styles/mstle.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="source/files/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="source/files/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="source/files/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>MyHTML</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">HTML</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="Tags.html">Tags</a>
+                        <a class="nav-link active" aria-current="page" href="Selectors.html">Selectors</a>
+                        <a class="nav-link" href="semantics.html">Semantics</a>
+                        <a class="nav-link" href="Positions.html">Positions</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section>
+        <div class="container-fluid mt-4">
+            <div class="row">
+              <div class="col-lg-1">
+              </div>
+              <div class="col-lg-8 col-md-12">
+                  <h1>Selectors(css)
+                      <hr>
+                  </h1>
+                  <h6>Селекторы — это шаблоны, которые используются для привязки стилевых свойств к элементам в документе. Вы
+                      можете задать стиль для всех элементов или сократить выбор с помощью определённого селектора. </h6>
+                  <ul>
+                      <h3>Oсновные селекторы:</h3>
+                      <li>Селекторы типа выбирают элементы HTML-документа по их тегу. Например, селектор p выберет все<b>
+                              &ltp></b> на странице</li>
+                      <li>Селекторы класса определяют стиль элементов с определённым классом<a href="#"
+                              title="имякласса''-html;   .имякласса-css">(class/.class)</a>.</li>
+                      <li>Селекторы идентификатора выбирают элемент по его уникальному идентификатору<a href="#"
+                              title="id&#61&#34имяайди&#34-html;   #имяайди-css">(id/#id)</a>.</li>
+                      <li>Селекторы наличия и значения атрибута находят все элементы, которые имеют определённый атрибут или
+                          значение атрибута</li>
+                      <li>Универсальный селектор позволяет прописать стили для всех элементов HTML без исключения. Он указывается
+                          в виде звёздочки *. </li>
+                  </ul>
+                  <h3>Селекторы-комбинаторы</h3>
+                  <p>Комбинаторы выбирают элементы, основываясь на их взаимосвязи в дереве DOM. Можно выбрать элементы, которые
+                      являются потомками, соседями или родителями других элементов.</p>
+                  <img class="imagge" ; src="source/image/6b48011e79865370821fddf3dd258e40.png" alt="картинка">
+                  <ul>
+                      <li>Соседний родственный комбинатор - Записывается как селектор1 + селектор2. Выбирает элемент, подходящий
+                          под селектор2, перед которым расположен элемент, подходящий под селектор1.</li>
+                      <li>Дочерний комбинатор - Записывается как селектор1 > селектор2. Выбирает элементы, которые являются
+                          прямыми потомками элемента, подходящего под селектор1.</li>
+                      <li>Общий родственный комбинатор - Записывается как селектор1 ~ селектор2. Добавляет стили для элемента,
+                          который соответствует селектор2, если перед ним стоит элемент, подходящий под селектор1. Оба элемента
+                          должны принадлежать одному родителю.</li>
+                      <li>Комбинатор потомка - Записывается как селектор1 селектор2. Находит все потомки элемента, который
+                          подходит под селектор1, и применяет к ним стили.</li>
+                  </ul>
+                  <p>Комбинаторы, такие как прямой потомок(>), соседние элементы (+) и общие соседи (~), позволяют выбирать
+                      элементы на основе их взаимоотношений. Например, ul > li { list-style-type: none; } уберёт маркеры списка
+                      для всех непосредственных потомков ul.</p>
+                      <p>Группировка селекторов через запятую позволяет применять одни и те же стили к разным элементам. Пример: h1,
+                          h2, h3 { font-family: Arial, sans-serif; } применит один и тот же шрифт к заголовкам трёх уровней.</p>
+                  <h3>Селекторы псевдоклассов</h3>
+                  <p>:first-child, :last-child и :nth-child(n) - Эти псевдоклассы выбирают элемент по его порядковому номеру.
+                      :first-child соответствует первому дочернему элементу родителя, :last-child — последнему. А псевдокласс
+                      :nth-child(n) указывает на n-й дочерний элемент. Например, с его помощью можно выбрать второй, пятый или
+                      предпоследний элемент. Вместо n в скобках указывается целое число или математическое выражение.</p>
+                  <p>:first-of-type, :last-of-type и :nth-of-type(n) - Эти псевдоклассы похожи на предыдущие. Они тоже выбирают
+                      элемент по его порядковому номеру, но только с учётом типа — тега.</p>
+                  <h3>Вес селекторов</h3>
+                  <table class="weight">
+                      <thead>
+                          <tr>
+                              <th>селекторы</th>
+                              <th>вес</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>теги</td>
+                              <td>1</td>
+                          </tr>
+                          <tr>
+                              <td>классы</td>
+                              <td>10</td>
+                          </tr>
+                          <tr>
+                              <td>id</td>
+                              <td>100</td>
+                          </tr>
+                          <tr>
+                              <td>встроенные стили</td>
+                              <td>1000</td>
+                          </tr>
+                      </tbody>
+                  </table>
+
+            </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <footer>
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <button style="position: relative; bottom: 10px;">
+                        <a href="https://www.google.ru/?hl=ru"><img src="source/image/icons8-google-50.png" alt=""></a>
+                    </button>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <a href="source.html">info/links</a>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <time datetime="2024-11-22">ред.2024</time>
+
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
