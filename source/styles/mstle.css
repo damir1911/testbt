@@ -74,3 +74,14 @@ footer{
         width:300px;
     }
 }
+
+
+@media (max-width: 700px) {
+    .imagge {
+        width: 250px;
+        height: 200px;
+    }
+    .weight {
+        width:200px;
+    }
+}
